@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['gethashcode_0',['GetHashCode',['../class_starter_app_1_1_database_1_1_models_1_1_user_role.html#a9f3625ebda9066346fe16f9d4bc5e92f',1,'StarterApp::Database::Models::UserRole']]],
+  ['getting_20started_1',['Getting started',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]],
+  ['getxamltype_2',['GetXamlType',['../class_starter_app_1_1_win_u_i_1_1_app.html#a864aac462fdda6f16710e8f319569929',1,'StarterApp.WinUI.App.GetXamlType(global::System.Type type)'],['../class_starter_app_1_1_win_u_i_1_1_app.html#a466fca7cb7b91bc6d962287374de31c6',1,'StarterApp.WinUI.App.GetXamlType(string fullName)'],['../class_starter_app_1_1_starter_app___xaml_type_info_1_1_xaml_meta_data_provider.html#a2b2eed00449622665622ef7805235336',1,'StarterApp.StarterApp_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(global::System.Type type)'],['../class_starter_app_1_1_starter_app___xaml_type_info_1_1_xaml_meta_data_provider.html#a8d363cd0c1ecc302dd920203703f5c58',1,'StarterApp.StarterApp_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(string fullName)']]],
+  ['getxmlnsdefinitions_3',['GetXmlnsDefinitions',['../class_starter_app_1_1_win_u_i_1_1_app.html#a2bf9372c3694e6215abc4167aa5deadf',1,'StarterApp.WinUI.App.GetXmlnsDefinitions()'],['../class_starter_app_1_1_starter_app___xaml_type_info_1_1_xaml_meta_data_provider.html#a8b4ac9f28901adba2b809bb9ddc1385f',1,'StarterApp.StarterApp_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions()']]]
+];

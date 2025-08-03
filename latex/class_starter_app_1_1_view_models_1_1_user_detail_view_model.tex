@@ -1,0 +1,352 @@
+\doxysection{Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model Class Reference}
+\hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model}{}\label{class_starter_app_1_1_view_models_1_1_user_detail_view_model}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+
+
+View\+Model for managing user details including creation, editing, and role management. Handles both new user creation and existing user modification scenarios.  
+
+
+Inheritance diagram for Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_starter_app_1_1_view_models_1_1_user_detail_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a107ba1fbe505ea223ca8b31290976002}{User\+Detail\+View\+Model}} (\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}} context, \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}} navigation\+Service, \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}} auth\+Service)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_user_detail_view_model}{User\+Detail\+View\+Model} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a466a18aaa28068e5bd79920b6f9081dd}{On\+Property\+Changed}} (\mbox{[}System.\+Runtime.\+Compiler\+Services.\+Caller\+Member\+Name\mbox{]} string? property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Raises the Property\+Changed event for the specified property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a66d15abdf2da7a65fd36f375af73f3a8}{User\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user ID. Setting this property triggers user loading. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a81d088b3e81cd361fb66eebcee812640}{First\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user\textquotesingle{}s first name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_adecd03a77f8b7bb5d26d1aeba3aaacb3}{Last\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user\textquotesingle{}s last name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab7fe938f7aaf72cbc52b8f07b887046e}{Email}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user\textquotesingle{}s email address. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aaf94c74fed8d2db4681c335b1e8b6b91}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the user\textquotesingle{}s password (visible only for new users). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab09b77482d7f5a2abb018c222648449d}{Confirm\+Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the password confirmation field. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab6967f465f3685b6bee20a9151ff5137}{Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether the user account is active. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a1d0329f88da5321dd15cbc0edbd2fe47}{Is\+Loading}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the loading state of the view model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a856713eef7fefbb30c649cdfcbc834c6}{Is\+New\+User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether this is a new user creation scenario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a040f89b6ee3bf56db31ec2e804d26462}{Error\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the error message to display to the user. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a6b53c62e647a40eb7ef40b7619156558}{Success\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the success message to display to the user. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_role_item}{Role\+Item}} $>$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8fc5414457ce320cfdb737b2f937ac93}{Available\+Roles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the collection of available roles for assignment. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_add41df2c27d40874f89740ef9705c237}{Page\+Title}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the page title based on whether this is a new user or edit scenario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8375b50593eedd18f0411bf85be89b12}{Show\+Password\+Fields}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether password fields should be shown (only for new users). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aa26d666bd12ca335cb0049784b752739}{Can\+Delete\+Current\+User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets whether the current user can be deleted (not new user and not the currently logged-\/in user). \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_af1bf81286c8212571862a4f1aa6752f5}{Save\+User\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Command to save the user (create or update) \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a3d4894033f78b7b88c74e1e9dd43af9b}{Delete\+User\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Command to delete the user. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ac8a7d4d7a742a1d5dd065a5a995e6133}{Add\+Role\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Command to add a role to the user. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8aafe681461ee41ee6aee3eb30f68798}{Remove\+Role\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Command to remove a role from the user. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a868b9dbf85c459c2fdc5bfc87f36347a}{Back\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Command to navigate back to the user list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler? \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a9842a3f49ce0811b21c05e5f2f4af2cd}{Property\+Changed}}
+\begin{DoxyCompactList}\small\item\em Occurs when a property value changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View\+Model for managing user details including creation, editing, and role management. Handles both new user creation and existing user modification scenarios. 
+
+This View\+Model provides comprehensive user management functionality including\+:
+\begin{DoxyItemize}
+\item \doxylink{class_starter_app_1_1_database_1_1_models_1_1_user}{User} creation with password validation
+\item \doxylink{class_starter_app_1_1_database_1_1_models_1_1_user}{User} profile editing
+\item \doxylink{class_starter_app_1_1_database_1_1_models_1_1_role}{Role} assignment and removal
+\item \doxylink{class_starter_app_1_1_database_1_1_models_1_1_user}{User} deletion (soft delete)
+\item Input validation and error handling 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a107ba1fbe505ea223ca8b31290976002}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!UserDetailViewModel@{UserDetailViewModel}}
+\index{UserDetailViewModel@{UserDetailViewModel}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{UserDetailViewModel()}{UserDetailViewModel()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a107ba1fbe505ea223ca8b31290976002} 
+Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+User\+Detail\+View\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}}}]{context}{, }\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}}}]{navigation\+Service}{, }\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}}}]{auth\+Service}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_user_detail_view_model}{User\+Detail\+View\+Model} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The database context for data operations\\
+\hline
+{\em navigation\+Service} & The navigation service for page transitions\\
+\hline
+{\em auth\+Service} & The authentication service for role verification\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a466a18aaa28068e5bd79920b6f9081dd}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a466a18aaa28068e5bd79920b6f9081dd} 
+virtual void Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+System\+::\+Runtime\+::\+Compiler\+Services\+::\+Caller\+Member\+Name\mbox{]} string?}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Raises the Property\+Changed event for the specified property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & The name of the property that changed\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ac8a7d4d7a742a1d5dd065a5a995e6133}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!AddRoleCommand@{AddRoleCommand}}
+\index{AddRoleCommand@{AddRoleCommand}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{AddRoleCommand}{AddRoleCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ac8a7d4d7a742a1d5dd065a5a995e6133} 
+ICommand Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Add\+Role\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Command to add a role to the user. 
+
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8fc5414457ce320cfdb737b2f937ac93}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!AvailableRoles@{AvailableRoles}}
+\index{AvailableRoles@{AvailableRoles}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{AvailableRoles}{AvailableRoles}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8fc5414457ce320cfdb737b2f937ac93} 
+Observable\+Collection$<$\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_role_item}{Role\+Item}}$>$ Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Available\+Roles\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the collection of available roles for assignment. 
+
+Observable collection of role items\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a868b9dbf85c459c2fdc5bfc87f36347a}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!BackCommand@{BackCommand}}
+\index{BackCommand@{BackCommand}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{BackCommand}{BackCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a868b9dbf85c459c2fdc5bfc87f36347a} 
+ICommand Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Back\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Command to navigate back to the user list. 
+
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aa26d666bd12ca335cb0049784b752739}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!CanDeleteCurrentUser@{CanDeleteCurrentUser}}
+\index{CanDeleteCurrentUser@{CanDeleteCurrentUser}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{CanDeleteCurrentUser}{CanDeleteCurrentUser}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aa26d666bd12ca335cb0049784b752739} 
+bool Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Can\+Delete\+Current\+User\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets whether the current user can be deleted (not new user and not the currently logged-\/in user). 
+
+True if the user can be deleted, false otherwise\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab09b77482d7f5a2abb018c222648449d}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!ConfirmPassword@{ConfirmPassword}}
+\index{ConfirmPassword@{ConfirmPassword}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{ConfirmPassword}{ConfirmPassword}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab09b77482d7f5a2abb018c222648449d} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Confirm\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the password confirmation field. 
+
+The password confirmation string\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a3d4894033f78b7b88c74e1e9dd43af9b}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!DeleteUserCommand@{DeleteUserCommand}}
+\index{DeleteUserCommand@{DeleteUserCommand}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{DeleteUserCommand}{DeleteUserCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a3d4894033f78b7b88c74e1e9dd43af9b} 
+ICommand Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Delete\+User\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Command to delete the user. 
+
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab7fe938f7aaf72cbc52b8f07b887046e}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!Email@{Email}}
+\index{Email@{Email}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{Email}{Email}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab7fe938f7aaf72cbc52b8f07b887046e} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user\textquotesingle{}s email address. 
+
+The email address of the user\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a040f89b6ee3bf56db31ec2e804d26462}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{ErrorMessage}{ErrorMessage}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a040f89b6ee3bf56db31ec2e804d26462} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Error\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the error message to display to the user. 
+
+The error message string\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a81d088b3e81cd361fb66eebcee812640}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!FirstName@{FirstName}}
+\index{FirstName@{FirstName}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{FirstName}{FirstName}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a81d088b3e81cd361fb66eebcee812640} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+First\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user\textquotesingle{}s first name. 
+
+The first name of the user\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab6967f465f3685b6bee20a9151ff5137}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{IsActive}{IsActive}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_ab6967f465f3685b6bee20a9151ff5137} 
+bool Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets whether the user account is active. 
+
+True if the user account is active, false otherwise\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a1d0329f88da5321dd15cbc0edbd2fe47}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!IsLoading@{IsLoading}}
+\index{IsLoading@{IsLoading}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{IsLoading}{IsLoading}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a1d0329f88da5321dd15cbc0edbd2fe47} 
+bool Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the loading state of the view model. 
+
+True if an operation is in progress, false otherwise\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a856713eef7fefbb30c649cdfcbc834c6}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!IsNewUser@{IsNewUser}}
+\index{IsNewUser@{IsNewUser}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{IsNewUser}{IsNewUser}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a856713eef7fefbb30c649cdfcbc834c6} 
+bool Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Is\+New\+User\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets whether this is a new user creation scenario. 
+
+True if creating a new user, false if editing existing user\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_adecd03a77f8b7bb5d26d1aeba3aaacb3}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!LastName@{LastName}}
+\index{LastName@{LastName}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{LastName}{LastName}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_adecd03a77f8b7bb5d26d1aeba3aaacb3} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Last\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user\textquotesingle{}s last name. 
+
+The last name of the user\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_add41df2c27d40874f89740ef9705c237}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!PageTitle@{PageTitle}}
+\index{PageTitle@{PageTitle}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{PageTitle}{PageTitle}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_add41df2c27d40874f89740ef9705c237} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Page\+Title\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the page title based on whether this is a new user or edit scenario. 
+
+"{}\+Create New User"{} for new users, "{}\+Edit User"{} for existing users\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aaf94c74fed8d2db4681c335b1e8b6b91}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!Password@{Password}}
+\index{Password@{Password}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_aaf94c74fed8d2db4681c335b1e8b6b91} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user\textquotesingle{}s password (visible only for new users). 
+
+The password for new user accounts\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8aafe681461ee41ee6aee3eb30f68798}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!RemoveRoleCommand@{RemoveRoleCommand}}
+\index{RemoveRoleCommand@{RemoveRoleCommand}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{RemoveRoleCommand}{RemoveRoleCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8aafe681461ee41ee6aee3eb30f68798} 
+ICommand Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Remove\+Role\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Command to remove a role from the user. 
+
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_af1bf81286c8212571862a4f1aa6752f5}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!SaveUserCommand@{SaveUserCommand}}
+\index{SaveUserCommand@{SaveUserCommand}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{SaveUserCommand}{SaveUserCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_af1bf81286c8212571862a4f1aa6752f5} 
+ICommand Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Save\+User\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Command to save the user (create or update) 
+
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8375b50593eedd18f0411bf85be89b12}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!ShowPasswordFields@{ShowPasswordFields}}
+\index{ShowPasswordFields@{ShowPasswordFields}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{ShowPasswordFields}{ShowPasswordFields}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a8375b50593eedd18f0411bf85be89b12} 
+bool Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Show\+Password\+Fields\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets whether password fields should be shown (only for new users). 
+
+True if password fields should be visible, false otherwise\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a6b53c62e647a40eb7ef40b7619156558}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!SuccessMessage@{SuccessMessage}}
+\index{SuccessMessage@{SuccessMessage}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{SuccessMessage}{SuccessMessage}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a6b53c62e647a40eb7ef40b7619156558} 
+string Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Success\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the success message to display to the user. 
+
+The success message string\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a66d15abdf2da7a65fd36f375af73f3a8}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!UserId@{UserId}}
+\index{UserId@{UserId}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{UserId}{UserId}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a66d15abdf2da7a65fd36f375af73f3a8} 
+int Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+User\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the user ID. Setting this property triggers user loading. 
+
+The user ID (0 for new users)
+
+\label{doc-event-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_doc-event-members}
+\doxysubsection{Event Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a9842a3f49ce0811b21c05e5f2f4af2cd}\index{StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}!PropertyChanged@{PropertyChanged}}
+\index{PropertyChanged@{PropertyChanged}!StarterApp.ViewModels.UserDetailViewModel@{StarterApp.ViewModels.UserDetailViewModel}}
+\doxysubsubsection{\texorpdfstring{PropertyChanged}{PropertyChanged}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_detail_view_model_a9842a3f49ce0811b21c05e5f2f4af2cd} 
+Property\+Changed\+Event\+Handler? Starter\+App.\+View\+Models.\+User\+Detail\+View\+Model.\+Property\+Changed}
+
+
+
+Occurs when a property value changes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Starter\+App/\+View\+Models/\mbox{\hyperlink{_user_detail_view_model_8cs}{User\+Detail\+View\+Model.\+cs}}\end{DoxyCompactItemize}

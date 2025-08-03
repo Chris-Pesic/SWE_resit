@@ -1,0 +1,283 @@
+\doxysection{Starter\+App.\+View\+Models.\+User\+List\+View\+Model Class Reference}
+\hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model}{}\label{class_starter_app_1_1_view_models_1_1_user_list_view_model}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+
+
+View\+Model for managing the user list display and interactions in the application. Provides functionality for loading, filtering, searching, and navigating users. Implements MVVM pattern with data binding support through INotify\+Property\+Changed.  
+
+
+Inheritance diagram for Starter\+App.\+View\+Models.\+User\+List\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_starter_app_1_1_view_models_1_1_user_list_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a31a6202a3ebfb9b5a20eb2f5ec776df2}{User\+List\+View\+Model}} (\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}} context, \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}} navigation\+Service, \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}} authentication\+Service)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_user_list_view_model}{User\+List\+View\+Model} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a52381f12b23d18fe52da3d0ac1090f5c}{On\+Property\+Changed}} (\mbox{[}System.\+Runtime.\+Compiler\+Services.\+Caller\+Member\+Name\mbox{]} string? property\+Name=null)
+\begin{DoxyCompactList}\small\item\em Raises the Property\+Changed event for the specified property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_item}{User\+List\+Item}} $>$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a2b50a023b3092b7b13dfe52b69c2d2b2}{Users}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the complete collection of users loaded from the database. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_item}{User\+List\+Item}} $>$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a618a8bf9c7225ed6b5a40ebe1a7ec628}{Filtered\+Users}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the filtered collection of users based on current search and role filters. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ string $>$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a8e781dde13ce97b84ad9005646658fa9}{Role\+Filter\+Options}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the collection of available role filter options. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0a5c9e9c3f5ac90d60f397474e11fe8a}{Selected\+Role\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the currently selected role filter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c4f29b7d9b8c48b34cb07e1b65f01bc}{Search\+Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the search text for filtering users. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c267e0c114535a5416785b3fa9ab4f6}{Is\+Loading}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether initial user loading is in progress. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_ace39eb440af2cc1d924539fcedd441f9}{Is\+Refreshing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether a refresh operation is in progress. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_abf0deb3ae5e962e0270d6e9cbc9c4129}{Is\+Admin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether the current user has admin privileges. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a7bec817ab69dbf1dc5c662c1d2f0ba31}{Load\+Users\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the command for loading users from the database. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_ab031b97f0f9d3e6539a3cded1b904132}{Refresh\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the command for refreshing the user list. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_a56e43f5c06855e3cb9d3d66905a35627}{User\+Selected\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the command for handling user selection. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_ae1a36337d573985ea69f0032b9169010}{Create\+User\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the command for creating a new user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler? \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_view_model_ac4e28d9c1b69508bd39bf9a274f3fad8}{Property\+Changed}}
+\begin{DoxyCompactList}\small\item\em Occurs when a property value changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View\+Model for managing the user list display and interactions in the application. Provides functionality for loading, filtering, searching, and navigating users. Implements MVVM pattern with data binding support through INotify\+Property\+Changed. 
+
+This View\+Model requires admin privileges to function properly. Non-\/admin users will be redirected to the main page when attempting to load users.
+
+Key features\+:
+\begin{DoxyItemize}
+\item \doxylink{class_starter_app_1_1_database_1_1_models_1_1_user}{User} loading with role information
+\item Real-\/time filtering by role and search text
+\item Pull-\/to-\/refresh functionality
+\item Navigation to user details and creation
+\item Admin-\/only access control 
+\end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a31a6202a3ebfb9b5a20eb2f5ec776df2}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!UserListViewModel@{UserListViewModel}}
+\index{UserListViewModel@{UserListViewModel}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{UserListViewModel()}{UserListViewModel()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a31a6202a3ebfb9b5a20eb2f5ec776df2} 
+Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+User\+List\+View\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}}}]{context}{, }\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}}}]{navigation\+Service}{, }\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}}}]{authentication\+Service}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_user_list_view_model}{User\+List\+View\+Model} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \doxylink{namespace_starter_app_1_1_database}{Database} context for user data access\\
+\hline
+{\em navigation\+Service} & Service for page navigation\\
+\hline
+{\em authentication\+Service} & Service for authentication and authorization\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & Thrown when any parameter is null\\
+\hline
+\end{DoxyExceptions}
+
+
+The constructor automatically initiates user loading in the background and sets up role filter options based on available roles in the system. 
+
+\label{doc-func-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a52381f12b23d18fe52da3d0ac1090f5c}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!OnPropertyChanged@{OnPropertyChanged}}
+\index{OnPropertyChanged@{OnPropertyChanged}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{OnPropertyChanged()}{OnPropertyChanged()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a52381f12b23d18fe52da3d0ac1090f5c} 
+virtual void Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+On\+Property\+Changed (\begin{DoxyParamCaption}\item[{\mbox{[}\+System\+::\+Runtime\+::\+Compiler\+Services\+::\+Caller\+Member\+Name\mbox{]} string?}]{property\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Raises the Property\+Changed event for the specified property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+Name} & Name of the property that changed. If null, the caller member name is used.\\
+\hline
+\end{DoxyParams}
+
+
+This method is called by property setters to notify the UI of property changes. The Caller\+Member\+Name attribute automatically provides the property name when called from a property setter. 
+
+\label{doc-property-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_ae1a36337d573985ea69f0032b9169010}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!CreateUserCommand@{CreateUserCommand}}
+\index{CreateUserCommand@{CreateUserCommand}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{CreateUserCommand}{CreateUserCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_ae1a36337d573985ea69f0032b9169010} 
+ICommand Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Create\+User\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the command for creating a new user. 
+
+Command that navigates to user creation page when invoked\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a618a8bf9c7225ed6b5a40ebe1a7ec628}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!FilteredUsers@{FilteredUsers}}
+\index{FilteredUsers@{FilteredUsers}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{FilteredUsers}{FilteredUsers}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a618a8bf9c7225ed6b5a40ebe1a7ec628} 
+Observable\+Collection$<$\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_item}{User\+List\+Item}}$>$ Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Filtered\+Users\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the filtered collection of users based on current search and role filters. 
+
+Observable collection containing users that match current filter criteria
+
+This collection is bound to the UI and automatically updates when filters change. It represents a subset of the Users collection based on Selected\+Role\+Filter and Search\+Text. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_abf0deb3ae5e962e0270d6e9cbc9c4129}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!IsAdmin@{IsAdmin}}
+\index{IsAdmin@{IsAdmin}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{IsAdmin}{IsAdmin}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_abf0deb3ae5e962e0270d6e9cbc9c4129} 
+bool Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Is\+Admin\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether the current user has admin privileges. 
+
+True if the current user is an admin; otherwise, false
+
+This property is used for conditional UI display and access control. Only admin users can access the user list functionality. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c267e0c114535a5416785b3fa9ab4f6}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!IsLoading@{IsLoading}}
+\index{IsLoading@{IsLoading}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{IsLoading}{IsLoading}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c267e0c114535a5416785b3fa9ab4f6} 
+bool Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether initial user loading is in progress. 
+
+True if loading users for the first time; otherwise, false
+
+This property is used to show/hide loading indicators in the UI during initial data load. It\textquotesingle{}s distinct from Is\+Refreshing which is used for pull-\/to-\/refresh operations. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_ace39eb440af2cc1d924539fcedd441f9}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!IsRefreshing@{IsRefreshing}}
+\index{IsRefreshing@{IsRefreshing}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{IsRefreshing}{IsRefreshing}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_ace39eb440af2cc1d924539fcedd441f9} 
+bool Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Is\+Refreshing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether a refresh operation is in progress. 
+
+True if refresh is in progress; otherwise, false
+
+This property is used to control pull-\/to-\/refresh UI indicators. It\textquotesingle{}s distinct from Is\+Loading which is used for initial data loading. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a7bec817ab69dbf1dc5c662c1d2f0ba31}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!LoadUsersCommand@{LoadUsersCommand}}
+\index{LoadUsersCommand@{LoadUsersCommand}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{LoadUsersCommand}{LoadUsersCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a7bec817ab69dbf1dc5c662c1d2f0ba31} 
+ICommand Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Load\+Users\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the command for loading users from the database. 
+
+Command that executes Load\+Users\+Async when invoked\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_ab031b97f0f9d3e6539a3cded1b904132}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!RefreshCommand@{RefreshCommand}}
+\index{RefreshCommand@{RefreshCommand}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{RefreshCommand}{RefreshCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_ab031b97f0f9d3e6539a3cded1b904132} 
+ICommand Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Refresh\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the command for refreshing the user list. 
+
+Command that executes Refresh\+Users\+Async when invoked\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a8e781dde13ce97b84ad9005646658fa9}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!RoleFilterOptions@{RoleFilterOptions}}
+\index{RoleFilterOptions@{RoleFilterOptions}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{RoleFilterOptions}{RoleFilterOptions}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a8e781dde13ce97b84ad9005646658fa9} 
+Observable\+Collection$<$string$>$ Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Role\+Filter\+Options\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the collection of available role filter options. 
+
+Observable collection containing "{}\+All"{} plus all available role names
+
+This collection is populated during initialization and remains static. It includes "{}\+All"{} as the default option plus all roles defined in Role\+Constants. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c4f29b7d9b8c48b34cb07e1b65f01bc}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!SearchText@{SearchText}}
+\index{SearchText@{SearchText}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{SearchText}{SearchText}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0c4f29b7d9b8c48b34cb07e1b65f01bc} 
+string Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Search\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the search text for filtering users. 
+
+String used to search across user names, emails, and roles
+
+Setting this property automatically triggers filter reapplication through Apply\+Filters(). Search is case-\/insensitive and matches against Full\+Name, Email, and Roles\+Display. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0a5c9e9c3f5ac90d60f397474e11fe8a}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!SelectedRoleFilter@{SelectedRoleFilter}}
+\index{SelectedRoleFilter@{SelectedRoleFilter}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedRoleFilter}{SelectedRoleFilter}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a0a5c9e9c3f5ac90d60f397474e11fe8a} 
+string Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Selected\+Role\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the currently selected role filter. 
+
+String representing the selected role filter ("{}\+All"{} or specific role name)
+
+Setting this property automatically triggers filter reapplication through Apply\+Filters(). Default value is "{}\+All"{} which shows users with any role. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a2b50a023b3092b7b13dfe52b69c2d2b2}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!Users@{Users}}
+\index{Users@{Users}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{Users}{Users}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a2b50a023b3092b7b13dfe52b69c2d2b2} 
+Observable\+Collection$<$\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_user_list_item}{User\+List\+Item}}$>$ Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Users\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the complete collection of users loaded from the database. 
+
+Observable collection containing all active users with their role information
+
+This collection is populated by Load\+Users\+Async and serves as the source for applying filters to create the Filtered\+Users collection. \Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_a56e43f5c06855e3cb9d3d66905a35627}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!UserSelectedCommand@{UserSelectedCommand}}
+\index{UserSelectedCommand@{UserSelectedCommand}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{UserSelectedCommand}{UserSelectedCommand}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_a56e43f5c06855e3cb9d3d66905a35627} 
+ICommand Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+User\+Selected\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the command for handling user selection. 
+
+Command that navigates to user detail page when a user is selected
+
+\label{doc-event-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_doc-event-members}
+\doxysubsection{Event Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_user_list_view_model_ac4e28d9c1b69508bd39bf9a274f3fad8}\index{StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}!PropertyChanged@{PropertyChanged}}
+\index{PropertyChanged@{PropertyChanged}!StarterApp.ViewModels.UserListViewModel@{StarterApp.ViewModels.UserListViewModel}}
+\doxysubsubsection{\texorpdfstring{PropertyChanged}{PropertyChanged}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_user_list_view_model_ac4e28d9c1b69508bd39bf9a274f3fad8} 
+Property\+Changed\+Event\+Handler? Starter\+App.\+View\+Models.\+User\+List\+View\+Model.\+Property\+Changed}
+
+
+
+Occurs when a property value changes. 
+
+This event is part of the INotify\+Property\+Changed interface and is used by the data binding system to update the UI when property values change. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Starter\+App/\+View\+Models/\mbox{\hyperlink{_user_list_view_model_8cs}{User\+List\+View\+Model.\+cs}}\end{DoxyCompactItemize}

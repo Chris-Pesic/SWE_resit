@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="StarterApp.Views.ConferencePage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:StarterApp.ViewModels"
+             xmlns:models="clr-namespace:StarterApp.Database.Models"
+             Title="Conferences">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Profile" Command="{Binding NavigateToProfileCommand}" IconImageSource="user.png" />
+        <ToolbarItem Text="Settings" Command="{Binding NavigateToSettingsCommand}" IconImageSource="settings.png" />
+        <ToolbarItem Text="Logout" Command="{Binding LogoutCommand}" IconImageSource="logout.png" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Label Text="{Binding Message}" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <StackLayout IsVisible="{Binding IsAdminOrSpecialUser}" Spacing="10">
+                <Label Text="Add New Conference" FontSize="18" FontAttributes="Bold" />
+
+                <Entry Placeholder="Speaker" Text="{Binding NewConference.Speaker}" />
+                <DatePicker Date="{Binding NewConference.Time}" />
+                <Entry Placeholder="Location" Text="{Binding NewConference.Location}" />
+                <Entry Placeholder="Capacity" Keyboard="Numeric" Text="{Binding NewConference.Capacity}" />
+
+                <Button Text="Create Conference" Command="{Binding AddConferenceCommand}" />
+            </StackLayout>
+
+            <CollectionView ItemsSource="{Binding UpcomingConferences}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BackgroundColor="{AppThemeBinding Light=White, Dark=Gray900}" Padding="10" Margin="0,5">
+                            <StackLayout>
+                                <Label Text="{Binding Speaker}" FontAttributes="Bold" FontSize="16" />
+                                <Label Text="{Binding Time, StringFormat='{}{0:dddd, MMM d, yyyy HH:mm}'}" />
+                                <Label Text="{Binding Location}" />
+                                <Label Text="{Binding Capacity, StringFormat='Capacity: {0}'}" FontSize="12" />
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

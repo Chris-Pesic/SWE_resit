@@ -1,0 +1,90 @@
+\doxysection{Starter\+App.\+View\+Models.\+App\+Shell\+View\+Model Class Reference}
+\hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model}{}\label{class_starter_app_1_1_view_models_1_1_app_shell_view_model}\index{StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}}
+
+
+View model for the application shell that manages navigation and authentication.  
+
+
+Inheritance diagram for Starter\+App.\+View\+Models.\+App\+Shell\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.544118cm]{class_starter_app_1_1_view_models_1_1_app_shell_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a118f0df535b4a481d04b80033184ee0b}{App\+Shell\+View\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for design-\/time support. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a93fd57038fe7e54fe0f2207834c98895}{App\+Shell\+View\+Model}} (\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}} auth\+Service, \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}} navigation\+Service)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_app_shell_view_model}{App\+Shell\+View\+Model} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ Menu\+Bar\+Item $>$ \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a306cc855e0c861330f06f7394ec383d5}{Dynamic\+Menu\+Bar\+Items}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection of dynamic menu bar items. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_base_view_model}{Starter\+App.\+View\+Models.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_base_view_model_a1ed268c8a134fab27d92f6b68d0c4a55}{Set\+Error}} (string message)
+\begin{DoxyCompactList}\small\item\em Sets an error message and updates the error state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_starter_app_1_1_view_models_1_1_base_view_model_afc81c4f70ba0615217c5ee4f2a095615}{Clear\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Clears the current error state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View model for the application shell that manages navigation and authentication. 
+
+Handles menu items, navigation commands, and authentication state changes 
+
+\label{doc-constructors}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a118f0df535b4a481d04b80033184ee0b}\index{StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}!AppShellViewModel@{AppShellViewModel}}
+\index{AppShellViewModel@{AppShellViewModel}!StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}}
+\doxysubsubsection{\texorpdfstring{AppShellViewModel()}{AppShellViewModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a118f0df535b4a481d04b80033184ee0b} 
+Starter\+App.\+View\+Models.\+App\+Shell\+View\+Model.\+App\+Shell\+View\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for design-\/time support. 
+
+Sets the title to "{}\+Starter\+App"{} \Hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a93fd57038fe7e54fe0f2207834c98895}\index{StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}!AppShellViewModel@{AppShellViewModel}}
+\index{AppShellViewModel@{AppShellViewModel}!StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}}
+\doxysubsubsection{\texorpdfstring{AppShellViewModel()}{AppShellViewModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a93fd57038fe7e54fe0f2207834c98895} 
+Starter\+App.\+View\+Models.\+App\+Shell\+View\+Model.\+App\+Shell\+View\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{IAuthentication\+Service}}}]{auth\+Service}{, }\item[{\mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_navigation_service}{INavigation\+Service}}}]{navigation\+Service}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_starter_app_1_1_view_models_1_1_app_shell_view_model}{App\+Shell\+View\+Model} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em auth\+Service} & The authentication service instance \\
+\hline
+{\em navigation\+Service} & The navigation service instance\\
+\hline
+\end{DoxyParams}
+Sets up authentication state change event handler and initializes the title 
+
+\label{doc-property-members}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a306cc855e0c861330f06f7394ec383d5}\index{StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}!DynamicMenuBarItems@{DynamicMenuBarItems}}
+\index{DynamicMenuBarItems@{DynamicMenuBarItems}!StarterApp.ViewModels.AppShellViewModel@{StarterApp.ViewModels.AppShellViewModel}}
+\doxysubsubsection{\texorpdfstring{DynamicMenuBarItems}{DynamicMenuBarItems}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_view_models_1_1_app_shell_view_model_a306cc855e0c861330f06f7394ec383d5} 
+Observable\+Collection$<$Menu\+Bar\+Item$>$ Starter\+App.\+View\+Models.\+App\+Shell\+View\+Model.\+Dynamic\+Menu\+Bar\+Items = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection of dynamic menu bar items. 
+
+Observable collection that can be modified at runtime based on user permissions 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Starter\+App/\+View\+Models/\mbox{\hyperlink{_app_shell_view_model_8cs}{App\+Shell\+View\+Model.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,183 @@
+\doxysection{Starter\+App.\+Services.\+Authentication\+Service Class Reference}
+\hypertarget{class_starter_app_1_1_services_1_1_authentication_service}{}\label{class_starter_app_1_1_services_1_1_authentication_service}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+Inheritance diagram for Starter\+App.\+Services.\+Authentication\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_starter_app_1_1_services_1_1_authentication_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_ac767c1de4bca390376044ff6d6b861c2}{Authentication\+Service}} (\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}} context)
+\item 
+async Task$<$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_result}{Authentication\+Result}} $>$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a29f625898c739d6d92d35ad5ced96bb8}{Login\+Async}} (string email, string password)
+\item 
+async Task$<$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_result}{Authentication\+Result}} $>$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a049920b5968383969d38d2e317de42d5}{Register\+Async}} (string first\+Name, string last\+Name, string email, string password)
+\item 
+Task \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a16c4113eac2d4baaf445fcabe3ba33a5}{Logout\+Async}} ()
+\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a33c8f1323bdc3f3b42ec403a48faaace}{Has\+Role}} (string role\+Name)
+\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_ad12c80e71f6809b62082c513440fc737}{Has\+Any\+Role}} (params string\mbox{[}$\,$\mbox{]} role\+Names)
+\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a78382d7d6d47dfeb93228dd6cc6da6ab}{Has\+All\+Roles}} (params string\mbox{[}$\,$\mbox{]} role\+Names)
+\item 
+async Task$<$ bool $>$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a53c80fafe4d1a21c1f62feb19fc0b1d7}{Change\+Password\+Async}} (string current\+Password, string new\+Password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_ae7ccf036e2b3eec0060d2086982384fc}{Is\+Authenticated}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_starter_app_1_1_database_1_1_models_1_1_user}{User}}? \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a7a63cae21e796041d15ba36fbc9d24d7}{Current\+User}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a42bc68abcc1ce97194f1a0de78f3498c}{Current\+User\+Roles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ bool $>$? \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_service_a638fffa245ee0982c085f7d7880ea437}{Authentication\+State\+Changed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events inherited from \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service}{Starter\+App.\+Services.\+IAuthentication\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ bool $>$? \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_a0bb05fdff524a0fdd52ee3809c93d2dd}{Authentication\+State\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_ac767c1de4bca390376044ff6d6b861c2}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!AuthenticationService@{AuthenticationService}}
+\index{AuthenticationService@{AuthenticationService}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{AuthenticationService()}{AuthenticationService()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_ac767c1de4bca390376044ff6d6b861c2} 
+Starter\+App.\+Services.\+Authentication\+Service.\+Authentication\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_starter_app_1_1_database_1_1_data_1_1_app_db_context}{App\+Db\+Context}}}]{context}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a53c80fafe4d1a21c1f62feb19fc0b1d7}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!ChangePasswordAsync@{ChangePasswordAsync}}
+\index{ChangePasswordAsync@{ChangePasswordAsync}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{ChangePasswordAsync()}{ChangePasswordAsync()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a53c80fafe4d1a21c1f62feb19fc0b1d7} 
+async Task$<$ bool $>$ Starter\+App.\+Services.\+Authentication\+Service.\+Change\+Password\+Async (\begin{DoxyParamCaption}\item[{string}]{current\+Password}{, }\item[{string}]{new\+Password}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_a7d26c1164713e56f89642c6580a80a27}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a78382d7d6d47dfeb93228dd6cc6da6ab}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!HasAllRoles@{HasAllRoles}}
+\index{HasAllRoles@{HasAllRoles}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{HasAllRoles()}{HasAllRoles()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a78382d7d6d47dfeb93228dd6cc6da6ab} 
+bool Starter\+App.\+Services.\+Authentication\+Service.\+Has\+All\+Roles (\begin{DoxyParamCaption}\item[{params string\mbox{[}$\,$\mbox{]}}]{role\+Names}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_acafa6c7dc6381dddeb8c4d74d788489d}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_ad12c80e71f6809b62082c513440fc737}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!HasAnyRole@{HasAnyRole}}
+\index{HasAnyRole@{HasAnyRole}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{HasAnyRole()}{HasAnyRole()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_ad12c80e71f6809b62082c513440fc737} 
+bool Starter\+App.\+Services.\+Authentication\+Service.\+Has\+Any\+Role (\begin{DoxyParamCaption}\item[{params string\mbox{[}$\,$\mbox{]}}]{role\+Names}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_a3a79d50755c816ea6174f49276bdf63d}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a33c8f1323bdc3f3b42ec403a48faaace}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!HasRole@{HasRole}}
+\index{HasRole@{HasRole}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{HasRole()}{HasRole()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a33c8f1323bdc3f3b42ec403a48faaace} 
+bool Starter\+App.\+Services.\+Authentication\+Service.\+Has\+Role (\begin{DoxyParamCaption}\item[{string}]{role\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_ad4941a3f819eb4ec2e72851d875c559d}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a29f625898c739d6d92d35ad5ced96bb8}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!LoginAsync@{LoginAsync}}
+\index{LoginAsync@{LoginAsync}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{LoginAsync()}{LoginAsync()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a29f625898c739d6d92d35ad5ced96bb8} 
+async Task$<$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_result}{Authentication\+Result}} $>$ Starter\+App.\+Services.\+Authentication\+Service.\+Login\+Async (\begin{DoxyParamCaption}\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_ab5ec35de64372d782b17e60fe716de3c}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a16c4113eac2d4baaf445fcabe3ba33a5}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!LogoutAsync@{LogoutAsync}}
+\index{LogoutAsync@{LogoutAsync}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{LogoutAsync()}{LogoutAsync()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a16c4113eac2d4baaf445fcabe3ba33a5} 
+Task Starter\+App.\+Services.\+Authentication\+Service.\+Logout\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_aac429a801fbcac2613b629b61bb377b9}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a049920b5968383969d38d2e317de42d5}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!RegisterAsync@{RegisterAsync}}
+\index{RegisterAsync@{RegisterAsync}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{RegisterAsync()}{RegisterAsync()}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a049920b5968383969d38d2e317de42d5} 
+async Task$<$ \mbox{\hyperlink{class_starter_app_1_1_services_1_1_authentication_result}{Authentication\+Result}} $>$ Starter\+App.\+Services.\+Authentication\+Service.\+Register\+Async (\begin{DoxyParamCaption}\item[{string}]{first\+Name}{, }\item[{string}]{last\+Name}{, }\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_afb53dfd9b74fb0c963cfd549c1b4dec8}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a7a63cae21e796041d15ba36fbc9d24d7}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!CurrentUser@{CurrentUser}}
+\index{CurrentUser@{CurrentUser}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{CurrentUser}{CurrentUser}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a7a63cae21e796041d15ba36fbc9d24d7} 
+\mbox{\hyperlink{class_starter_app_1_1_database_1_1_models_1_1_user}{User}}? Starter\+App.\+Services.\+Authentication\+Service.\+Current\+User\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_acf114c84a3c5ae4318e80778e73c4f0a}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a42bc68abcc1ce97194f1a0de78f3498c}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!CurrentUserRoles@{CurrentUserRoles}}
+\index{CurrentUserRoles@{CurrentUserRoles}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{CurrentUserRoles}{CurrentUserRoles}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a42bc68abcc1ce97194f1a0de78f3498c} 
+List$<$string$>$ Starter\+App.\+Services.\+Authentication\+Service.\+Current\+User\+Roles\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_a692b7dba4d470a3549a3747aef5b36a9}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_ae7ccf036e2b3eec0060d2086982384fc}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!IsAuthenticated@{IsAuthenticated}}
+\index{IsAuthenticated@{IsAuthenticated}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{IsAuthenticated}{IsAuthenticated}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_ae7ccf036e2b3eec0060d2086982384fc} 
+bool Starter\+App.\+Services.\+Authentication\+Service.\+Is\+Authenticated\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implements \mbox{\hyperlink{interface_starter_app_1_1_services_1_1_i_authentication_service_aec92d2431737404b290c81d9d5dc97f9}{Starter\+App.\+Services.\+IAuthentication\+Service}}.
+
+
+
+\label{doc-event-members}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_doc-event-members}
+\doxysubsection{Event Documentation}
+\Hypertarget{class_starter_app_1_1_services_1_1_authentication_service_a638fffa245ee0982c085f7d7880ea437}\index{StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}!AuthenticationStateChanged@{AuthenticationStateChanged}}
+\index{AuthenticationStateChanged@{AuthenticationStateChanged}!StarterApp.Services.AuthenticationService@{StarterApp.Services.AuthenticationService}}
+\doxysubsubsection{\texorpdfstring{AuthenticationStateChanged}{AuthenticationStateChanged}}
+{\footnotesize\ttfamily \label{class_starter_app_1_1_services_1_1_authentication_service_a638fffa245ee0982c085f7d7880ea437} 
+Event\+Handler$<$bool$>$? Starter\+App.\+Services.\+Authentication\+Service.\+Authentication\+State\+Changed}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Starter\+App/\+Services/\mbox{\hyperlink{_authentication_service_8cs}{Authentication\+Service.\+cs}}\end{DoxyCompactItemize}
